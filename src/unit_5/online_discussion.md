@@ -1,3 +1,10 @@
+Collabrative discustion
+
+Purpose of the Task:
+
+The purpose of this discussion task was to analyse a payment-processing code snippet and refactor it using the Strategy Pattern. The goal was to identify weaknesses in the original implementation—such as tight coupling, violation of the Open/Closed Principle, and reliance on conditional logic—and demonstrate how Strategy can introduce flexibility and maintainability. The task also required reflecting on best-practice design techniques and supporting arguments with recent academic research.
+_____________________
+My post:
 
 The current implementation of PaymentProcessor exhibits several design issues. First, it violates the Open/Closed Principle, as introducing a new payment type requires modifying the existing class. This creates tight coupling, making the code more fragile and harder to test. Second, the expanding if–elif chain reduces readability and increases maintenance complexity, a common signal that behaviour should be delegated to specialised components instead of being embedded within a single method.
 
@@ -56,7 +63,7 @@ Peer feedback to my post:
 I concur with your analysis, particularly the assertion that the if-elif chain serves as a clear signal for delegating behaviour. What stood out to me in your post is the way you linked the strategy pattern directly to empirical evidence from recent studies. That strengthens the argument beyond theory. One aspect I’d add is how strategy improves modularity and makes runtime flexibility possible; for example, switching from PayPal to credit card processing without altering the core PaymentProcessor. Do you think this runtime adaptability is as important in real‑world payment systems as the maintainability benefits you highlighted"
 
 _____________________
-My reply:
+My reply post:
 
 "Hi Payman,
 
@@ -82,10 +89,6 @@ Silva, G., Costa, I. & Dias, L. (2021) Proceedings of the ACM SE Conference, pp.
 
 _____________________
 Describtion
-
-Purpose of the Task:
-
-The purpose of this discussion task was to analyse a payment-processing code snippet and refactor it using the Strategy Pattern. The goal was to identify weaknesses in the original implementation—such as tight coupling, violation of the Open/Closed Principle, and reliance on conditional logic—and demonstrate how Strategy can introduce flexibility and maintainability. The task also required reflecting on best-practice design techniques and supporting arguments with recent academic research.
 
 OOP Principles and Techniques Used:
 
