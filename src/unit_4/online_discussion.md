@@ -1,8 +1,7 @@
 Structural design patterns help manage complexity when integrating systems or structuring software components.
 1. Adapter Pattern
 
-from abc import ABC, abstractmethod
-
+A common real-world need for the Adapter Pattern occurs when integrating a legacy SOAP payment service into a modern e-commerce platform that expects JSON-based REST calls. Because the interfaces are incompatible, the adapter acts as a translator, allowing the modern platform to call a unified pay() method while internally converting the request to the legacy SOAP format. This supports backward compatibility without modifying the old system (García et al., 2023).
 
 class LegacySoapPayment:
     def make_payment(self, amount):
@@ -20,44 +19,11 @@ class LegacyPaymentAdapter(PaymentGateway):
 
     def pay(self, amount):
         return self.legacy.make_payment(amount)
-
-
-# usage
-gateway = LegacyPaymentAdapter(LegacySoapPayment())
-print(gateway.pay(50))
-
-A common real-world need for the Adapter Pattern occurs when integrating a legacy SOAP payment service into a modern e-commerce platform that expects JSON-based REST calls. Because the interfaces are incompatible, the adapter acts as a translator, allowing the modern platform to call a unified pay() method while internally converting the request to the legacy SOAP format. This supports backward compatibility without modifying the old system (García et al., 2023).
- 
+        
 2. Bridge Pattern
 
-# Implementation hierarchy
-
-
-class Device(ABC):
-    @abstractmethod
-    def enable(self): ...
-    @abstractmethod
-    def disable(self): ...
-    @abstractmethod
-    def is_on(self): ...
-
-
-class TV(Device):
-    def __init__(self): self.on = False
-    def enable(self): self.on = True
-    def disable(self): self.on = False
-    def is_on(self): return self.on
-
-
-class Radio(Device):
-    def __init__(self): self.on = False
-    def enable(self): self.on = True
-    def disable(self): self.on = False
-    def is_on(self): return self.on
-
-# Abstraction hierarchy
-
-
+The Bridge Pattern is useful when managing multiple device types (e.g., TV, Radio) and different remote controls (Basic or Advanced). Without the pattern, new combinations would cause class explosion. By separating abstraction (RemoteControl) from implementation (Device), each can vary independently, improving maintainability (Liu & Zhao, 2022).
+ 
 class RemoteControl:
     def __init__(self, device: Device):
         self.device = device
@@ -67,26 +33,19 @@ class RemoteControl:
             self.device.disable()
         else:
             self.device.enable()
-
-
-class AdvancedRemote(RemoteControl):
-    def mute(self):
-        print("Muted")
-
-
-# usage
-remote = AdvancedRemote(TV())
-remote.toggle_power()
-remote.mute()
-
-
-The Bridge Pattern is useful when managing multiple device types (e.g., TV, Radio) and different remote controls (Basic or Advanced). Without the pattern, new combinations would cause class explosion. By separating abstraction (RemoteControl) from implementation (Device), each can vary independently, improving maintainability (Liu & Zhao, 2022).
- 
-
+            
 3. Composite Pattern
 
 The Composite Pattern supports treating files and folders uniformly in a file-system structure. Both implement the same interface, enabling recursive operations such as listing or searching. This pattern simplifies client code because it no longer needs to distinguish between single objects and groups (Rahman & Hossain, 2023).
- 
+
+class Folder(FileSystemComponent):
+    def __init__(self, name):
+        self.name = name
+        self.children = []
+
+    def add(self, component: FileSystemComponent):
+        self.children.append(component)
+___________________        
 References
 García, D., Martín, J. & Torres, A. (2023) Modern integration approaches in distributed systems. Journal of Software Architecture, 11(2), pp. 55–67.
 
