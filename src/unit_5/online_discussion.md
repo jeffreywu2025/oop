@@ -90,15 +90,15 @@ Silva, G., Costa, I. & Dias, L. (2021) Proceedings of the ACM SE Conference, pp.
 _____________________
 Describtion
 
-OOP Principles and Techniques Used:
+1.OOP Principles and Techniques Used:
 
 My contribution applied several key OOP concepts. The Strategy Pattern was used to encapsulate each payment algorithm within its own class, enabling interchangeable behaviours at runtime. This applies abstraction through a shared strategy interface, polymorphism by allowing different payment strategies to be selected dynamically, and encapsulation by isolating each payment method’s logic. The refactoring also aligns with the Open/Closed Principle, as new strategies can now be added without modifying existing code. Recent studies emphasise that Strategy improves modularity, reduces duplication, and supports evolving system requirements (Ahmed & Patel, 2024; Li & Sørensen, 2023).
 
-Challenges Faced and How I Overcame Them:
+2.Challenges Faced and How I Overcame Them:
 
 A key challenge was determining when the Strategy Pattern is genuinely necessary instead of overengineering. I resolved this by comparing the original code’s rigidity to criteria identified in current software-engineering research, such as the presence of behavioural variation and repetitive branching structures (Rossi & Kumar, 2025). This helped justify the pattern’s use and guided the cleanest refactoring approach.
 
-How This Artefact Demonstrates My Understanding:
+3.How This Artefact Demonstrates My Understanding:
 
 This discussion demonstrates advanced OOP understanding by showing the ability to diagnose design problems, justify a pattern-based solution, and support reasoning with contemporary research. By illustrating how Strategy enables runtime flexibility, modularity, and improved maintainability, the artefact reflects a deeper grasp of architecture-level thinking rather than only code-level correctness. The inclusion of peer-reviewed 2023–2025 sources strengthens the conceptual grounding and shows awareness of current trends in modern software design.
 
