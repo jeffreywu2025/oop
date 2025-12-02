@@ -1,3 +1,7 @@
+Unit 4 Collborative discussion:
+
+My post:
+
 Structural design patterns help manage complexity when integrating systems or structuring software components.
 1. Adapter Pattern
 
