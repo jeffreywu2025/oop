@@ -38,6 +38,7 @@ producing a Sedan, SUV, or Hatchback. This decoupling enhances
 maintainability and scalability, making the system adaptable to future
 car types with minimal changes.
 
+My code:
 ```python
 
 from abc import ABC, abstractmethod
@@ -116,7 +117,7 @@ _________________________________
 
 Describtion
 
-Object-Oriented Principles and Techniques Used:
+1.Object-Oriented Principles and Techniques Used:
 
 Abstraction:
 The abstract Car class defines shared behaviour through the drive() method. Abstraction ensures consistency across all concrete car types while hiding implementation details, reflecting modern OOP guidelines for reducing complexity (Hake & Dip, 2025).
@@ -133,11 +134,11 @@ Car creation logic is encapsulated within factory subclasses. This separation of
 Factory Method Pattern:
 The Factory Method Pattern separates object creation from object use, allowing the system to evolve without modifying existing code. Recent literature shows that pattern-based design significantly improves extensibility in enterprise-level systems (Adeyemi & Chen, 2023).
 
-Challenges and Solutions:
+2.Challenges and Solutions:
 
 A key challenge was ensuring that the client code did not directly instantiate concrete classes, as this would tightly couple the system and make future additions difficult. By strictly applying the Factory Method Pattern and validating the design against contemporary best-practice research (Adeyemi & Chen, 2023; Rahman & Uddin, 2024), this issue was resolved. Another challenge involved structuring the factory hierarchy clearly; separating abstract and concrete classes helped maintain conceptual clarity.
 
-How the Artefact Demonstrates Understanding:
+3.How the Artefact Demonstrates Understanding:
 
 This artefact demonstrates advanced understanding of OOP by integrating abstraction, inheritance, polymorphism, and encapsulation with a modern interpretation of the Factory Method Pattern. The design is extensible, allowing new car types to be introduced with no modifications to the main program—consistent with current research showing that extensibility and modularity are essential traits of high-quality software architectures (Yanakiev, 2025). The solution reflects practical application of modern software design principles and shows strong competency in leveraging design patterns for real-world problem scenarios.
 
