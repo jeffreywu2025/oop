@@ -1,4 +1,4 @@
-Collabrative discustion
+Collaborative discustion
 
 Purpose of the Task:
 
