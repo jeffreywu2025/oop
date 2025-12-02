@@ -55,7 +55,7 @@ class Folder(FileSystemComponent):
     def add(self, component: FileSystemComponent):
         self.children.append(component)
 ```
-___________________        
+  
 References:
 
 García, D., Martín, J. & Torres, A. (2023) Modern integration approaches in distributed systems. Journal of Software Architecture, 11(2), pp. 55–67.
