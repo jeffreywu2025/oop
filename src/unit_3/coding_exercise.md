@@ -117,12 +117,16 @@ Object-Oriented Principles and Techniques Used:
 
 Abstraction:
 The abstract Car class defines shared behaviour through the drive() method. Abstraction ensures consistency across all concrete car types while hiding implementation details, reflecting modern OOP guidelines for reducing complexity (Hake & Dip, 2025).
+
 Inheritance:
 Concrete classes (Sedan, SUV, Hatchback) inherit from Car, demonstrating hierarchical relationships and code reuse—an approach still validated in current OOP research (Gonzalez et al., 2024).
+
 Polymorphism:
 The main program interacts only with abstract factories and abstract car types, allowing different objects to be used interchangeably. This flexibility is widely recognised as essential in modern scalable systems (Iqbal & Mills, 2023).
+
 Encapsulation:
 Car creation logic is encapsulated within factory subclasses. This separation of concerns supports maintainability and reflects contemporary clean-architecture practices (Rahman & Uddin, 2024).
+
 Factory Method Pattern:
 The Factory Method Pattern separates object creation from object use, allowing the system to evolve without modifying existing code. Recent literature shows that pattern-based design significantly improves extensibility in enterprise-level systems (Adeyemi & Chen, 2023).
 
