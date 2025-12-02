@@ -115,7 +115,7 @@ if __name__ == "__main__":
 ```
 _________________________________
 
-Describtion
+Description
 
 1.Object-Oriented Principles and Techniques Used:
 
