@@ -112,6 +112,7 @@ if __name__ == "__main__":
     main()
 
 ```
+_________________________________
 Object-Oriented Principles and Techniques Used:
 
 Abstraction:
@@ -124,8 +125,6 @@ Encapsulation:
 Car creation logic is encapsulated within factory subclasses. This separation of concerns supports maintainability and reflects contemporary clean-architecture practices (Rahman & Uddin, 2024).
 Factory Method Pattern:
 The Factory Method Pattern separates object creation from object use, allowing the system to evolve without modifying existing code. Recent literature shows that pattern-based design significantly improves extensibility in enterprise-level systems (Adeyemi & Chen, 2023).
-
-Reflection: 
 
 Challenges and Solutions:
 
