@@ -138,8 +138,12 @@ This artefact demonstrates advanced understanding of OOP by integrating abstract
 References:
 
 Adeyemi, T. & Chen, L. (2023) ‘Evaluating the effectiveness of design patterns in modern software architectures.’ Journal of Software Engineering Research, 12(4), pp. 221–238.
+
 Gonzalez, P., Martin, R. & Silva, L. (2024) ‘Contemporary applications of inheritance and polymorphism in object-oriented design.’ International Journal of Computer Science Advances, 18(2), pp. 112–129.
+
 Hake, N. & Dip, L.H. (2025) ‘Adopting SOLID Principles in Android Application Development: A Case Study and Best Practices.’ International Journal of Software Engineering and Computer Science (IJSECS), 5(1), pp. 406–416. Available at: https://www.researchgate.net/publication/392424886_Adopting_SOLID_Principles_in_Android_Application_Development_A_Case_Study_and_Best_Practices
+
 Iqbal, Z. & Mills, T. (2023) ‘A systematic review of polymorphism and its impact on software extensibility.’ Computing Research Letters, 7(3), pp. 55–72.
+
 Rahman, A. & Uddin, M. (2024) ‘Encapsulation strategies for maintainable large-scale systems.’ Software Practice and Perspectives, 9(1), pp. 87–102.
 
