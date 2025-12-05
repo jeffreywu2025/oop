@@ -193,3 +193,16 @@ Alaslani, M. & Moustafa, N. (2023) Cluster Computing.
 Choi, J., Jung, Y-A. & Ko, H. (2025) ‘Comparative Analysis of SQL Injection Defense Mechanisms’, Applied Sciences, 15(23), p.12351.
 Eum, S. et al. (2023) ‘Optimised Implementation of Argon2 Utilising the GPU’, Applied Sciences, 13(16), p.9295.
 Hamza, A. (2024) ‘Detecting Brute-Force Attacks Using Machine Learning’, BIO Web of Conferences, 97, 00045.
+
+_________________________
+OOP Principles and Techniques Used:
+
+In developing my solution, I applied several object-oriented principles, most notably encapsulation, abstraction, and the Single Responsibility Principle (SRP). The separation of the User class from the AuthenticationSystem reinforces SRP by ensuring each class manages only one area of responsibility — credential storage and authentication logic respectively. Encapsulation is demonstrated through protected attributes (_users, _login_meta, _password_hash), which prevent direct modification from outside the class and ensure internal control over sensitive authentication data. Methods such as _sanitize_username() and _validate_password_policy() reflect abstraction by hiding internal implementation logic while exposing only essential behaviour. This approach aligns with secure software engineering guidance, which emphasises modular and maintainable authentication structures (Eum et al. 2023; Choi, Jung & Ko 2025).
+
+Challenges Faced and How I Overcame Them:
+
+One of the main challenges involved determining how to balance usability and strict security controls — specifically in password policy and rate-limiting decisions. Initially, I considered a shorter minimum password length and more lenient input policy, but further research highlighted the importance of entropy, passphrase length, and brute-force resistance (Alaslani & Moustafa 2023; Hamza 2024). Comparing hashing algorithms also required research into performance and security trade-offs, which led to the selection of Argon2 due to its memory-hard design and resilience to GPU-accelerated cracking. Through this reflection, I strengthened the authentication logic and improved decision-making grounded in current literature.
+
+How This Artefact Demonstrates My Understanding:
+
+This artefact demonstrates my applied understanding of advanced OOP and secure-system design. I have shown the ability to critique an insecure implementation, refactor it using encapsulation and abstraction, and integrate industry-recommended security patterns such as hashing, sanitisation, and lockout control. My contribution reflects not only syntactic capability, but also conceptual reasoning — connecting academic theory with practical authentication design. I believe this ability to combine OOP structure with defensive security patterns illustrates a developing mastery of higher-level architecture thinking.
