@@ -172,9 +172,11 @@ if __name__ == "__main__":
 ``` 
 References
 
-Choi, J., Jung, Y-A. & Ko, H., 2025. Comparative Analysis of SQL Injection Defense Mechanisms. Applied Sciences.
-Eum, S. et al., 2023. Optimised Implementation of Argon2 Password Hashing. Applied Sciences.
-Hamza, A., 2024. Detecting and Preventing Brute Force Attacks Using Machine Learning. BIO Web of Conferences.
+Choi, J., Jung, Y-A. & Ko, H. (2025) ‘Comparative analysis of SQL injection defence mechanisms’, Applied Sciences, 15(23), pp. 1–15.
+
+Eum, S., Kim, H., Song, M. & Seo, H. (2023) ‘Optimised implementation of Argon2 password hashing’, Applied Sciences, 13(16), 9295.
+
+Hamza, A. (2024) ‘Detecting and preventing brute-force attacks using machine learning’, BIO Web of Conferences, 97, 00045.
 
 ____________________________
 My reply to classmate post:
