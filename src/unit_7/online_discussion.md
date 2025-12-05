@@ -208,6 +208,7 @@ How This Artefact Demonstrates My Understanding
 This artefact demonstrates the capability to evaluate, refactor and justify an authentication system using higher-level OOP reasoning. The implementation showcases the application of encapsulation and abstraction to restructure code securely, alongside rate-limiting, hashing and validation mechanisms that align with current secure-development expectations (Choi, Jung & Ko 2025). Beyond the code itself, the reflective comparison with a peer solution indicates critical thinking, architectural decision-making and academic justification rather than superficial correction. This demonstrates progression from procedural coding to a more conceptual approach grounded in modern OOP design, maintainability and security-focused software engineering practice (Zhang & Li 2025).
 
 References:
+
 Alaslani, M. & Moustafa, N. (2023) Password entropy trends in modern authentication systems, Cluster Computing.
 Choi, J., Jung, Y-A. & Ko, H. (2025) ‘Comparative analysis of SQL injection defence mechanisms’, Applied Sciences, 15(23), p.12351.
 Eum, S. et al. (2023) ‘Optimised implementation of Argon2 utilising GPU acceleration’, Applied Sciences, 13(16), p.9295.
