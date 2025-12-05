@@ -195,15 +195,17 @@ Eum, S. et al. (2023) ‘Optimised Implementation of Argon2 Utilising the GPU’
 Hamza, A. (2024) ‘Detecting Brute-Force Attacks Using Machine Learning’, BIO Web of Conferences, 97, 00045.
 
 _________________________
-OOP Principles and Techniques Used
+Description
+
+1.OOP Principles and Techniques Used
 
 In developing and responding to the authentication system implementations, I applied several core object-oriented programming (OOP) principles. A key principle was encapsulation, demonstrated by storing user data and authentication logic within separate, self-contained classes — an approach associated with improved security and resilience against unintended state manipulation (Zhang & Li 2025). Protected attributes such as _users, _login_meta and _password_hash support this by limiting direct access to internal data. I also used abstraction, separating validation logic into helper methods like _sanitize_username() and _validate_password_policy(), which conceal underlying implementation and expose only essential behaviour, improving maintainability and readability (Ferreira, Santos & Moreira 2024). Furthermore, the structure reflects the Single Responsibility Principle (SRP), where User handles credential representation and AuthenticationSystem manages authentication flow. This aligns with modern OOP literature recommending modular design for secure system extensibility (Martin 2023).
 
-Challenges Faced and How I Overcame Them
+2.Challenges Faced and How I Overcame Them
 
 A key challenge was determining the balance between strong authentication security and user usability — specifically password length, hashing implementation and input restrictions. Initially, weaker password rules seemed simpler, but recent studies highlight the superiority of longer passphrases for entropy and brute-force resistance (Alaslani & Moustafa 2023). This led to adopting Argon2, which provides memory-hard resistance against credential-cracking attacks (Eum et al. 2023). Another challenge involved structuring the system using correct OOP boundaries. Applying SRP required evaluating different class breakdowns and comparing where methods logically belonged, supported by reviewing best-practice design models and reinforcing concepts through peer comparison (Hamza 2024). Engaging with peer code helped refine understanding, validate decisions and improve system architecture clarity.
 
-How This Artefact Demonstrates My Understanding
+3.How This Artefact Demonstrates My Understanding
 
 This artefact demonstrates the capability to evaluate, refactor and justify an authentication system using higher-level OOP reasoning. The implementation showcases the application of encapsulation and abstraction to restructure code securely, alongside rate-limiting, hashing and validation mechanisms that align with current secure-development expectations (Choi, Jung & Ko 2025). Beyond the code itself, the reflective comparison with a peer solution indicates critical thinking, architectural decision-making and academic justification rather than superficial correction. This demonstrates progression from procedural coding to a more conceptual approach grounded in modern OOP design, maintainability and security-focused software engineering practice (Zhang & Li 2025).
 
