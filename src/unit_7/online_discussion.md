@@ -210,9 +210,15 @@ This artefact demonstrates the capability to evaluate, refactor and justify an a
 References:
 
 Alaslani, M. & Moustafa, N. (2023) Password entropy trends in modern authentication systems, Cluster Computing.
+
 Choi, J., Jung, Y-A. & Ko, H. (2025) ‘Comparative analysis of SQL injection defence mechanisms’, Applied Sciences, 15(23), p.12351.
+
 Eum, S. et al. (2023) ‘Optimised implementation of Argon2 utilising GPU acceleration’, Applied Sciences, 13(16), p.9295.
+
 Ferreira, M., Santos, R. & Moreira, A. (2024) ‘Abstraction models for secure OOP software design’, Journal of Software Engineering Research, 12(4), pp.44–59.
+
 Hamza, A. (2024) ‘Detecting brute-force authentication attacks using machine learning’, BIO Web of Conferences, 97, 00045.
+
 Martin, R.C. (2023) Clean Architecture Principles for Secure Software, Pearson Education.
+
 Zhang, L. & Li, Y. (2025) ‘Encapsulation-driven authentication system security in OOP frameworks’, Journal of Computer Security Studies, 19(2), pp.75–92.
