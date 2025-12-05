@@ -1,5 +1,23 @@
 Unit 4 Collborative discussion:
 
+Using the concept of Structural Design Patterns, produce the solution for a set of collaborative discussion tasks.
+
+1.The Adapter Pattern allows incompatible interfaces to work together. An adapter class acts as a bridge, translating requests/responses between the modern system and the legacy system. Think of a real-world scenario where you might need to use the Adapter Pattern. For example, consider integrating a legacy system with a modern API.
+Scenario: Integrating a legacy payment system (e.g., an old SOAP-based API) with a modern e-commerce platform (expecting RESTful JSON APIs).
+Explain how the Adapter Pattern would solve the problem.
+Share a code example (in Python) demonstrating the Adapter Pattern.
+
+2.The Bridge Pattern separates abstraction from implementation and decouples abstraction (RemoteControl) from implementation (Device). Think of a scenario where you might use the Bridge Pattern, such as managing different types of devices and their remote controls.
+Scenario: Managing different devices (TV, Radio) and their remote controls (Basic, Advanced).
+Explain how the Bridge Pattern would solve the problem.
+Share a code example (in Python) demonstrating the Bridge Pattern.
+
+3.The Composite Pattern allows you to compose objects into hierarchical structures (tree of objects). Both File and Folder implement the same interface (FileSystemComponent). Think of a scenario where you might use the Composite Pattern, such as managing a file system with files and folders.
+Scenario: Managing a file system where files and folders can be treated uniformly.
+Explain how the Composite Pattern would solve the problem.
+Share a code example (in Python) demonstrating the Composite Pattern.
+_____________________________________________
+
 My post:
 
 Structural design patterns help manage complexity when integrating systems or structuring software components.
