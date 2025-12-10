@@ -1,3 +1,5 @@
+Unit 6 Individual Coding
+
 1. Introduction
 
 Modern banking systems must support many users accessing shared financial resources at the same time. If concurrent operations such as deposits, withdrawals and transfers are not carefully controlled, issues like race conditions, inconsistent balances and deadlocks can occur, leading to serious financial and security risks. Recent work on secure software development highlights that concurrency errors and weak coding practices remain a major source of vulnerabilities in real systems (Saeed et al., 2025; Xia et al., 2024).  
