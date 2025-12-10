@@ -1,4 +1,4 @@
-Unit 6 Individual Coding
+Unit 6 Individual Coding exercise
 
 1. Introduction
 
