@@ -2,7 +2,9 @@ Unit 8 Collaborative Discussion
 
 The given pricing function is functional but exhibits several design issues that negatively impact maintainability and readability.
 The first clear code smell is the use of magic numbers. Discount factors (0.9, 0.8) are embedded directly in the logic, obscuring business intent and tightly coupling pricing rules to the calculation method. Such hardcoding reduces readability and increases maintenance effort when discount policies change (Alomari, 2025).
+
 The second issue is conditional complexity caused by type codes. Behaviour is selected using string comparisons on item["type"], concentrating multiple pricing rules within a single method. As new item types are introduced, this function must be modified, violating the Open–Closed Principle and increasing the likelihood of defects (Imran et al., 2024).
+
 A related design concern is primitive obsession. Representing items as dictionaries with string keys instead of domain objects weakens type safety and reduces expressiveness, making the code more error-prone and harder to evolve.
 Option 1 – Data-driven refactoring (simpler systems)
 
