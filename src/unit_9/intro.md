@@ -27,7 +27,10 @@ Furthermore, the abstraction of the data access layer and the inclusion of unit 
 Overall, the artefact effectively demonstrates the application of advanced OOP principles to create a secure, modular, and maintainable software system aligned with contemporary software engineering standards.
 
 
-References 
+References:
+
 Fowler, M. (2023) Refactoring: improving the design of existing code. 2nd edn. Boston: Addison-Wesley.
+
 Richards, M. and Ford, N. (2024) Fundamentals of software architecture: an engineering approach. 2nd edn. Sebastopol: O’Reilly Media.
+
 Sommerville, I. (2024) Software engineering. 11th edn. Harlow: Pearson Education.
