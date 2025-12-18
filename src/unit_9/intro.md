@@ -5,7 +5,7 @@ The purpose of this task was to design and implement an online shopping system f
 To achieve this, the system was designed using a layered architecture, separating the presentation layer, business logic layer, and data access layer. Layered architectures are widely recommended for large systems as they improve maintainability, testability, and separation of concerns (Sommerville, 2024). The task also aimed to demonstrate the practical application of advanced OOP concepts and software design techniques through a realistic system artefact supported by unit testing.
 
 Link to the full artifact:
-
+https://github.com/jeffreywu2025/oop/tree/main/src/unit_9/shopease
 
 2. Object-Oriented Principles and Techniques Used
 The ShopEase system applies several fundamental and advanced object-oriented principles.
