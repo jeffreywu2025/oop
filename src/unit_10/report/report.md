@@ -25,6 +25,11 @@ Role-based access control (RBAC) is enforced within the service layer to ensure 
 The User Management module was implemented using Python and object-oriented design principles. The module is framework-agnostic and structured to reflect the layered architecture described previously. Core domain entities, such as the User class, encapsulate state and behaviour, while business logic is implemented within a dedicated service layer.
 A repository abstraction is used to decouple persistence logic from business rules. For demonstration and testing purposes, an in-memory repository implementation is provided. This approach improves testability and supports future replacement with a database-backed repository without modifying service-layer code.
 
+The full source code and accompanying unit tests for the secure e-learning
+platform are available in a public GitHub repository at:
+
+https://github.com/jeffreywu2025/oop/tree/main/src/unit_10/secure_elearning_platform
+
 2.1 Test-Driven Development Approach
 
 Test-Driven Development (TDD) was applied throughout the implementation of the User Management module. Unit tests were written prior to implementing each public service method, defining the expected behaviour and error conditions. The implementation was then incrementally developed to satisfy these tests, followed by refactoring to improve clarity and maintainability while ensuring that all tests continued to pass (Beck, 2023).
