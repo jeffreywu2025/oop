@@ -35,7 +35,7 @@ Figure 2 presents the UML class diagram for the implemented User Management modu
 
 The use of an explicit repository interface enables alternative storage mechanisms to be introduced without modifying business logic, while the PasswordHasher class encapsulates all cryptographic operations related to credential management. Visibility modifiers are used to distinguish public interfaces from internal state, reinforcing encapsulation and adherence to object-oriented design principles (Bass, Clements and Kazman, 2023).
 
-![UML class diagram](images/uml_user_management_final.png)
+![UML class diagram](images/uml_user_management.png)
  
 3. Testing and Validation
  
