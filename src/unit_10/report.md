@@ -43,8 +43,12 @@ Figure 3: Output of automated unit tests executed using Python’s unittest fram
 References
 
 Bass, L., Clements, P. and Kazman, R. (2023) Software Architecture in Practice. 4th edn. Boston: Addison-Wesley.
+
 Beck, K. (2023) Test-Driven Development: By Example. 2nd edn. Boston: Addison-Wesley.
+
 NIST (2025) Digital Identity Guidelines: Authentication and Authenticator Management (SP 800-63B). National Institute of Standards and Technology.
+
 OWASP (2025) Application Security Verification Standard (ASVS). OWASP Foundation.
+
 Python Software Foundation (2025) Python Documentation: secrets module. 
 
