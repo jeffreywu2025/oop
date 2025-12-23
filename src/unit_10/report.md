@@ -18,6 +18,7 @@ Security is a primary design concern in this system. User authentication is impl
 Role-based access control (RBAC) is enforced within the service layer to ensure that only authorised users can perform sensitive operations. Input validation is applied to all externally supplied data to reduce the risk of injection attacks. Cryptographically secure random tokens are generated using Python’s secrets module, aligning with guidance provided by the Python Software Foundation (Python Software Foundation, 2025). The overall design aligns with the OWASP Application Security Verification Standard (ASVS) and NIST digital identity guidelines (NIST, 2025; OWASP, 2025).
 
 2. System Implementation
+
 The User Management module was implemented using Python and object-oriented design principles. The module is framework-agnostic and structured to reflect the layered architecture described previously. Core domain entities, such as the User class, encapsulate state and behaviour, while business logic is implemented within a dedicated service layer.
 
 A repository abstraction is used to decouple persistence logic from business rules. For demonstration and testing purposes, an in-memory repository implementation is provided. This approach improves testability and supports future replacement with a database-backed repository without modifying service-layer code.
@@ -40,6 +41,7 @@ All tests were executed using Python’s unittest framework and passed successfu
 Figure 3: Output of automated unit tests executed using Python’s unittest framework, confirming successful validation of all UserService public methods.
  
 References
+
 Bass, L., Clements, P. and Kazman, R. (2023) Software Architecture in Practice. 4th edn. Boston: Addison-Wesley.
 Beck, K. (2023) Test-Driven Development: By Example. 2nd edn. Boston: Addison-Wesley.
 NIST (2025) Digital Identity Guidelines: Authentication and Authenticator Management (SP 800-63B). National Institute of Standards and Technology.
