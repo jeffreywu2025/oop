@@ -3,9 +3,13 @@ Unit 10 Case study report
 1. Software Architecture Design
 
 This project adopts a layered architectural style for the design of a secure e-learning platform. Layered architectures are widely used in enterprise systems as they promote separation of concerns, improve maintainability, and allow individual layers to evolve independently (Bass, Clements and Kazman, 2023). In the context of an e-learning platform, this approach enables clear boundaries between presentation logic, business rules, domain entities, and data persistence.
+
 From a scalability perspective, a modular layered monolith provides a pragmatic foundation. While the system is deployed as a single application, each module is loosely coupled and communicates through well-defined interfaces. This allows future migration to microservices if required, without significant architectural rework (Richards and Ford, 2024). Additionally, centralising security-sensitive functionality within the service layer supports consistent enforcement of authentication and authorisation policies.
 The high-level architecture of the system consists of four layers: a presentation layer responsible for user interaction, a service layer that encapsulates business logic and access control, a domain layer containing core entities and rules, and an infrastructure layer that manages persistence and security-related utilities. Figure 1 conceptually illustrates this layered structure.
+
 Figure 1: Conceptual layered architecture of the secure e-learning platform, illustrating separation between presentation, service, domain, and infrastructure layers.
+
+![High-level layered architecture](images/high_level_architecture.png)
 
 1.1 Key System Modules
 
@@ -28,13 +32,19 @@ Test-Driven Development (TDD) was applied throughout the implementation of the U
 2.2 UML Class Diagram
 
 Figure 2 presents the UML class diagram for the implemented User Management module. The diagram illustrates the separation of concerns between domain entities, service-layer logic, and infrastructure components. The UserService class orchestrates application use cases while depending on the UserRepositoryinterface rather than a concrete persistence implementation, thereby supporting dependency inversion and improving maintainability.
+
 The use of an explicit repository interface enables alternative storage mechanisms to be introduced without modifying business logic, while the PasswordHasher class encapsulates all cryptographic operations related to credential management. Visibility modifiers are used to distinguish public interfaces from internal state, reinforcing encapsulation and adherence to object-oriented design principles (Bass, Clements and Kazman, 2023).
+
+![UML class diagram](images/uml_user_management_final.png)
  
 3. Testing and Validation
  
 Comprehensive unit tests were written for all public methods of the UserService class, including user registration, authentication, password changes, account disabling, and role management. These tests validate both normal operation and exceptional conditions, such as invalid credentials and duplicate registrations.
 All tests were executed using Python’s unittest framework and passed successfully, providing confidence in the correctness and robustness of the implementation. Refactoring was guided by test results, enabling improvements to code readability and structure without introducing regressions.
+
 Figure 3: Output of automated unit tests executed using Python’s unittest framework, confirming successful validation of all UserService public methods.
+
+![Unit test results](images/test_results.png)
  
 References
 
