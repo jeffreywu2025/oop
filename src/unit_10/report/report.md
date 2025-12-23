@@ -50,6 +50,20 @@ All tests were executed using Python’s unittest framework and passed successfu
 Figure 3: Output of automated unit tests executed using Python’s unittest framework, confirming successful validation of all UserService public methods.
 
 ![Unit test results](images/test_results.png)
+
+4. Challenges Faced and How They Were Overcome
+
+During the development of the secure e-learning platform, several technical and design-related challenges were encountered. Addressing these challenges required careful consideration of object-oriented design principles, security best practices, and test-driven development techniques.
+
+One significant challenge involved the secure handling of user authentication data, particularly password storage and verification. Initial implementations risked insecure practices, such as insufficient hashing configuration or inadequate separation of security concerns from business logic. This challenge was overcome by encapsulating all cryptographic operations within a dedicated PasswordHasher class, which applies the PBKDF2-HMAC-SHA256 algorithm with per-user salting. This approach aligns with industry-recommended password storage practices and guidance provided by OWASP and NIST, while also improving cohesion and testability within the system (OWASP, 2025; NIST, 2025).
+
+Another challenge related to maintaining low coupling between the service layer and persistence mechanisms. Direct dependency on a concrete data store would have reduced flexibility and hindered future scalability. To address this, a repository abstraction was introduced through the UserRepository interface. The service layer depends solely on this abstraction, allowing an in-memory repository to be used for testing while supporting seamless replacement with a database-backed implementation in the future. This design follows the dependency inversion principle and improves long-term maintainability (Bass, Clements and Kazman, 2023).
+
+Applying Test-Driven Development also presented challenges, particularly in designing meaningful tests before implementation. Writing tests upfront required precise definition of expected behaviour, including error conditions and edge cases such as duplicate registrations and failed authentication attempts. These challenges were mitigated by incrementally refining test cases and using them to guide implementation decisions. As a result, the test suite provided a reliable safety net for refactoring and ensured consistent system behaviour throughout development (Beck, 2023).
+
+Finally, documenting the system architecture and UML diagrams in a clear and professional manner required additional refinement. Early textual diagrams suffered from formatting issues when rendered in word processing and markdown environments. This was resolved by replacing ASCII diagrams with image-based architectural and UML diagrams, improving clarity and presentation quality in line with academic expectations.
+
+Overall, these challenges contributed positively to the development process by reinforcing sound software engineering practices and deepening understanding of secure object-oriented system design.
  
 References
 
