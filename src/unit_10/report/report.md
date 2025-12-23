@@ -61,8 +61,6 @@ Another challenge related to maintaining low coupling between the service layer 
 
 Applying Test-Driven Development also presented challenges, particularly in designing meaningful tests before implementation. Writing tests upfront required precise definition of expected behaviour, including error conditions and edge cases such as duplicate registrations and failed authentication attempts. These challenges were mitigated by incrementally refining test cases and using them to guide implementation decisions. As a result, the test suite provided a reliable safety net for refactoring and ensured consistent system behaviour throughout development (Beck, 2023).
 
-Finally, documenting the system architecture and UML diagrams in a clear and professional manner required additional refinement. Early textual diagrams suffered from formatting issues when rendered in word processing and markdown environments. This was resolved by replacing ASCII diagrams with image-based architectural and UML diagrams, improving clarity and presentation quality in line with academic expectations.
-
 Overall, these challenges contributed positively to the development process by reinforcing sound software engineering practices and deepening understanding of secure object-oriented system design.
  
 References
