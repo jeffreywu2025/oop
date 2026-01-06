@@ -7,7 +7,7 @@ Link to artifact: https://github.com/jeffreywu2025/oop/tree/main/src/unit_12/Cap
 Modern information systems are increasingly exposed to credential-based attacks such as brute-force login attempts, credential stuffing, and anomalous authentication behaviour. These attacks frequently bypass traditional signature-based intrusion detection systems (IDS), which rely on predefined rules and known attack patterns. Consequently, malicious activities that exhibit novel or adaptive characteristics often remain undetected (Rahman and Shakil, 2023).
 
 The core problem addressed by this capstone project is the lack of adaptive yet explainable intrusion detection mechanisms capable of identifying both known and previously unseen authentication-based threats while remaining transparent, testable, and maintainable.
-
+________________
 2. Purpose of the Task
 
 The purpose of this capstone project is to design and implement an AI-driven Intrusion Detection System (IDS) that focuses on authentication security by analysing login events in real time. The system aims to:
@@ -18,7 +18,7 @@ The purpose of this capstone project is to design and implement an AI-driven Int
 
 2.3 Respond automatically through configurable security actions
 A hybrid IDS approach was selected because recent research demonstrates that combining rule-based logic with machine-learning anomaly detection provides improved coverage and robustness compared to single-method systems (Alqahtani, Alenezi and Mustafa, 2024).
-
+________________
 3. Design Decisions
 
 3.1 Hybrid Detection Strategy
@@ -40,7 +40,7 @@ The IDS was implemented using object-oriented programming (OOP) principles to en
 3.3.3 Dependency Injection – external services and models are injected to improve testability
 
 These design choices align with modern secure software engineering guidelines (NIST, 2024).
-
+________________
 4. Implementation Overview
 
 4.1 Event and Data Source Implementation
@@ -72,13 +72,13 @@ A central controller coordinates event processing, detection logic, and system r
 4.3.3 Blocking suspicious IP addresses 4.3.4 Sending notification emails
 
 Response actions are implemented as independent components, allowing the system to be easily extended with additional mitigation strategies (Alqahtani, Alenezi and Mustafa, 2024).
-
+________________
 5. Conclusion
 
 This capstone project provides a modular, extensible, and academically grounded Intrusion Detection System that addresses the shortcomings of traditional signature-based IDS solutions. By integrating rule-based logic with machine-learning anomaly detection, the system is capable of identifying both known and previously unseen authentication threats.
 
 The project demonstrates informed design decisions, effective application of object-oriented principles, and alignment with recent research in cybersecurity and secure software engineering.
-
+________________
 References
 
 Alqahtani, F., Alenezi, M. and Mustafa, A. (2024) Hybrid intrusion detection systems: Enhancing anomaly detection using combined rule-based and machine-learning approaches. Computers & Security, 140, pp. 103–119.
