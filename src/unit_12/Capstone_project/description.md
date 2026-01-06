@@ -10,8 +10,10 @@ The core problem addressed by this capstone project is the lack of adaptive yet 
 
 The purpose of this capstone project is to design and implement an AI-driven Intrusion Detection System (IDS) that focuses on authentication security by analysing login events in real time. The system aims to:
 
-2.1 Monitor authentication activity continuously 
+2.1 Monitor authentication activity continuously
+
 2.2 Detect suspicious behaviour using both deterministic rules and machine-learning techniques
+
 2.3 Respond automatically through configurable security actions
 A hybrid IDS approach was selected because recent research demonstrates that combining rule-based logic with machine-learning anomaly detection provides improved coverage and robustness compared to single-method systems (Alqahtani, Alenezi and Mustafa, 2024).
 
