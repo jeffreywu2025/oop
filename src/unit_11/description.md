@@ -30,8 +30,8 @@ References
 
 Martin, R.C. (2003) Agile Software Development: Principles, Patterns, and Practices. Upper Saddle River, NJ: Prentice Hall.
 
-Fowler, M. (2023) Inversion of Control Containers and the Dependency Injection Pattern. Available at: https://martinfowler.com/articles/injection.html 
+Fowler, M. (2023) Inversion of Control Containers and the Dependency Injection Pattern. 
 
 Gamma, E., Helm, R., Johnson, R. and Vlissides, J. (2024) Design Patterns: Elements of Reusable Object-Oriented Software. 25th Anniversary Edition. Boston: Addison-Wesley.
 
-Python Software Foundation (2024) unittest.mock — mock object library. Available at: https://docs.python.org/3/library/unittest.mock.html
+Python Software Foundation (2024) unittest.mock — mock object library. 
