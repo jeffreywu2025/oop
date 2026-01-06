@@ -77,8 +77,11 @@ LogFileDataSource (log replay)
 ## Testing
 
 The project includes a unit test suite located in the tests/ directory:
+
 test_detectors.py – tests rule-based and ML detection logic
+
 test_controller.py – tests controller integration and action triggering
+
 test_email_action.py – tests email alerts using a mock sender
 
 Run tests with:
