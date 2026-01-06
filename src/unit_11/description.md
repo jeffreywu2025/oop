@@ -4,7 +4,7 @@ Unit 11 Case study
 
 The purpose of this task was to refactor a simple Python application to apply Dependency Injection (DI) and Inversion of Control (IoC) principles in order to improve software maintainability, extensibility, and testability. The original implementation tightly coupled the UserManager class to a concrete EmailService, making the system difficult to extend with alternative notification mechanisms and challenging to test in isolation. By introducing abstractions and decoupling object creation from business logic, the refactored solution demonstrates how modern object-oriented design techniques can be applied to address common architectural issues in software development.
 
-https://github.com/jeffreywu2025/oop/tree/main/src/unit_11/coding
+Link to the full artifact: https://github.com/jeffreywu2025/oop/tree/main/src/unit_11/coding
 
 2. Object-Oriented Principles and Techniques Used
 
