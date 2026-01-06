@@ -30,20 +30,27 @@ Event-driven designs are increasingly adopted in cybersecurity systems due to th
 3.3 Object-Oriented Modular Design
 
 The IDS was implemented using object-oriented programming (OOP) principles to enhance maintainability and extensibility. Key principles applied include:
-3.3.1 Single Responsibility Principle – each module performs a clearly defined role 
-3.3.2 Open/Closed Principle – new detectors or actions can be added without modifying existing code 
+
+3.3.1 Single Responsibility Principle – each module performs a clearly defined role
+
+3.3.2 Open/Closed Principle – new detectors or actions can be added without modifying existing code
+
 3.3.3 Dependency Injection – external services and models are injected to improve testability
+
 These design choices align with modern secure software engineering guidelines (NIST, 2024).
 
 4. Implementation Overview
 
 4.1 Event and Data Source Implementation
 The system defines structured event representations for authentication activity. Two data sources are implemented:
+
 4.1.1 A simulated data source, which generates synthetic login events for testing and demonstration
+
 4.1.2 A log file data source, which replays historical authentication logs for reproducibility
 Synthetic data generation and log replay are widely recommended practices in IDS development and evaluation (Sosa and Mendoza, 2023).
 
 4.2 Detection Layer Implementation
+
 4.2.1 Rule-Based Detection
 Rule-based detection is implemented through independent rule components that evaluate login events against predefined conditions, such as rapid failed login bursts or suspicious IP usage. These rules provide deterministic and interpretable detection outcomes, supporting security auditing and incident analysis (Liang and Sang, 2024).
 
@@ -53,10 +60,15 @@ The machine-learning component employs an unsupervised anomaly detection model b
 The model trains automatically once sufficient behavioural data has been collected, and internal safeguards ensure predictions are only generated after successful training.
 
 4.3 Controller and Response Actions
+
 A central controller coordinates event processing, detection logic, and system responses. When suspicious behaviour is detected, the system can trigger one or more automated actions, including:
+
 4.3.1 Logging security events
+
 4.3.2 Raising alerts
+
 4.3.3 Blocking suspicious IP addresses 4.3.4 Sending notification emails
+
 Response actions are implemented as independent components, allowing the system to be easily extended with additional mitigation strategies (Alqahtani, Alenezi and Mustafa, 2024).
 
 5. Conclusion
