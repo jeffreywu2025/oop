@@ -7,6 +7,7 @@ Modern information systems are increasingly exposed to credential-based attacks 
 The core problem addressed by this capstone project is the lack of adaptive yet explainable intrusion detection mechanisms capable of identifying both known and previously unseen authentication-based threats while remaining transparent, testable, and maintainable.
 
 2. Purpose of the Task
+
 The purpose of this capstone project is to design and implement an AI-driven Intrusion Detection System (IDS) that focuses on authentication security by analysing login events in real time. The system aims to:
 
 2.1 Monitor authentication activity continuously 
@@ -33,6 +34,7 @@ The IDS was implemented using object-oriented programming (OOP) principles to en
 These design choices align with modern secure software engineering guidelines (NIST, 2024).
 
 4. Implementation Overview
+
 4.1 Event and Data Source Implementation
 The system defines structured event representations for authentication activity. Two data sources are implemented:
 4.1.1 A simulated data source, which generates synthetic login events for testing and demonstration
@@ -56,6 +58,7 @@ A central controller coordinates event processing, detection logic, and system r
 Response actions are implemented as independent components, allowing the system to be easily extended with additional mitigation strategies (Alqahtani, Alenezi and Mustafa, 2024).
 
 5. Conclusion
+
 This capstone project provides a modular, extensible, and academically grounded Intrusion Detection System that addresses the shortcomings of traditional signature-based IDS solutions. By integrating rule-based logic with machine-learning anomaly detection, the system is capable of identifying both known and previously unseen authentication threats.
 
 The project demonstrates informed design decisions, effective application of object-oriented principles, and alignment with recent research in cybersecurity and secure software engineering.
