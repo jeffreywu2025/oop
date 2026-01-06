@@ -1,4 +1,4 @@
-Unit 11 coding exercise
+Unit 11 Case study
 
 1. Purpose of the Task
 
