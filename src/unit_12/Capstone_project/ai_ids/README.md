@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project implements an **AI-Driven Intrusion Detection System (IDS)** designed to detect suspicious authentication behaviour using a **hybrid detection approach** that combines rule-based logic with machine-learning-based anomaly detection.
+This project implements an AI-Driven Intrusion Detection System (IDS) designed to detect suspicious authentication behaviour using a hybrid detection approach that combines rule-based logic with machine-learning-based anomaly detection.
 
-The system focuses on **login event monitoring** and is implemented in Python using a modular, object-oriented architecture. It is designed to be extensible, testable, and academically demonstrative of advanced software engineering and OOP principles.
+The system focuses on login event monitoring and is implemented in Python using a modular, object-oriented architecture. It is designed to be extensible, testable, and academically demonstrative of advanced software engineering and OOP principles.
 
 ---
 
@@ -88,11 +88,18 @@ pytest
 This project demonstrates advanced OOP concepts, including:
 
 -Inheritance (Event base class and subclasses)
+
 -Polymorphism (detectors, ML models, actions)
+
 -Encapsulation (internal state, configuration, ML flags)
+
 -Composition (controller → detectors → actions)
+
 -Strategy Pattern (rules and ML models)
+
 -Observer Pattern (EventBus subscribers)
+
 -Dependency Injection (email sender, ML models)
+
 -Open/Closed Principle (extensible rules and actions)
 
