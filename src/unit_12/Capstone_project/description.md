@@ -1,7 +1,5 @@
 Unit 12 Capstone Project Description: AI-Driven Intrusion Detection System (IDS)
 
-Capstone Project Description: AI-Driven Intrusion Detection System (IDS)
-
 1. Problem Statement
 Modern information systems are increasingly exposed to credential-based attacks such as brute-force login attempts, credential stuffing, and anomalous authentication behaviour. These attacks frequently bypass traditional signature-based intrusion detection systems (IDS), which rely on predefined rules and known attack patterns. Consequently, malicious activities that exhibit novel or adaptive characteristics often remain undetected (Rahman and Shakil, 2023).
 The core problem addressed by this capstone project is the lack of adaptive yet explainable intrusion detection mechanisms capable of identifying both known and previously unseen authentication-based threats while remaining transparent, testable, and maintainable.
