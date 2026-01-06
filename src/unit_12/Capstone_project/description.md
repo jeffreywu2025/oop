@@ -1,15 +1,21 @@
 Unit 12 Capstone Project Description: AI-Driven Intrusion Detection System (IDS)
 
 1. Problem Statement
+
 Modern information systems are increasingly exposed to credential-based attacks such as brute-force login attempts, credential stuffing, and anomalous authentication behaviour. These attacks frequently bypass traditional signature-based intrusion detection systems (IDS), which rely on predefined rules and known attack patterns. Consequently, malicious activities that exhibit novel or adaptive characteristics often remain undetected (Rahman and Shakil, 2023).
+
 The core problem addressed by this capstone project is the lack of adaptive yet explainable intrusion detection mechanisms capable of identifying both known and previously unseen authentication-based threats while remaining transparent, testable, and maintainable.
 
 2. Purpose of the Task
 The purpose of this capstone project is to design and implement an AI-driven Intrusion Detection System (IDS) that focuses on authentication security by analysing login events in real time. The system aims to:
-2.1 Monitor authentication activity continuously 2.2 Detect suspicious behaviour using both deterministic rules and machine-learning techniques 2.3 Respond automatically through configurable security actions
+
+2.1 Monitor authentication activity continuously 
+2.2 Detect suspicious behaviour using both deterministic rules and machine-learning techniques
+2.3 Respond automatically through configurable security actions
 A hybrid IDS approach was selected because recent research demonstrates that combining rule-based logic with machine-learning anomaly detection provides improved coverage and robustness compared to single-method systems (Alqahtani, Alenezi and Mustafa, 2024).
 
 3. Design Decisions
+
 3.1 Hybrid Detection Strategy
 A major design decision was the adoption of a hybrid detection model. Rule-based detection enables the identification of well-understood attack patterns such as repeated failed login attempts or access from blacklisted IP addresses. In contrast, machine-learning-based anomaly detection identifies deviations from normal behaviour without relying on predefined signatures (Chen, Rahimi and Botros, 2023).
 This combination ensures both explainability and adaptability, which are essential characteristics of modern IDS solutions.
@@ -19,14 +25,18 @@ The system was designed using an event-driven architecture, where all security-r
 Event-driven designs are increasingly adopted in cybersecurity systems due to their scalability, modularity, and suitability for real-time analysis (Wu, Singh and Patel, 2024).
 
 3.3 Object-Oriented Modular Design
+
 The IDS was implemented using object-oriented programming (OOP) principles to enhance maintainability and extensibility. Key principles applied include:
-3.3.1 Single Responsibility Principle – each module performs a clearly defined role 3.3.2 Open/Closed Principle – new detectors or actions can be added without modifying existing code 3.3.3 Dependency Injection – external services and models are injected to improve testability
+3.3.1 Single Responsibility Principle – each module performs a clearly defined role 
+3.3.2 Open/Closed Principle – new detectors or actions can be added without modifying existing code 
+3.3.3 Dependency Injection – external services and models are injected to improve testability
 These design choices align with modern secure software engineering guidelines (NIST, 2024).
 
 4. Implementation Overview
 4.1 Event and Data Source Implementation
 The system defines structured event representations for authentication activity. Two data sources are implemented:
-4.1.1 A simulated data source, which generates synthetic login events for testing and demonstration 4.1.2 A log file data source, which replays historical authentication logs for reproducibility
+4.1.1 A simulated data source, which generates synthetic login events for testing and demonstration
+4.1.2 A log file data source, which replays historical authentication logs for reproducibility
 Synthetic data generation and log replay are widely recommended practices in IDS development and evaluation (Sosa and Mendoza, 2023).
 
 4.2 Detection Layer Implementation
@@ -35,15 +45,19 @@ Rule-based detection is implemented through independent rule components that eva
 
 4.2.2 Machine-Learning Detection
 The machine-learning component employs an unsupervised anomaly detection model based on Isolation Forest, implemented using the scikit-learn library. Isolation Forest is well suited to authentication anomaly detection due to its efficiency and ability to detect outliers without labelled training data (Ortega and Sun, 2025).
+
 The model trains automatically once sufficient behavioural data has been collected, and internal safeguards ensure predictions are only generated after successful training.
 
 4.3 Controller and Response Actions
 A central controller coordinates event processing, detection logic, and system responses. When suspicious behaviour is detected, the system can trigger one or more automated actions, including:
-4.3.1 Logging security events 4.3.2 Raising alerts 4.3.3 Blocking suspicious IP addresses 4.3.4 Sending notification emails
+4.3.1 Logging security events
+4.3.2 Raising alerts
+4.3.3 Blocking suspicious IP addresses 4.3.4 Sending notification emails
 Response actions are implemented as independent components, allowing the system to be easily extended with additional mitigation strategies (Alqahtani, Alenezi and Mustafa, 2024).
 
 5. Conclusion
 This capstone project provides a modular, extensible, and academically grounded Intrusion Detection System that addresses the shortcomings of traditional signature-based IDS solutions. By integrating rule-based logic with machine-learning anomaly detection, the system is capable of identifying both known and previously unseen authentication threats.
+
 The project demonstrates informed design decisions, effective application of object-oriented principles, and alignment with recent research in cybersecurity and secure software engineering.
 
 References
