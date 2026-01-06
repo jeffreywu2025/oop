@@ -65,7 +65,6 @@ ai_ids/
 
 Install dependencies (if applicable):
 
-```bash
 pip install scikit-learn
 
 ##Run the IDS
