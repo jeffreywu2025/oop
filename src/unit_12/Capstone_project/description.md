@@ -73,7 +73,6 @@ A central controller coordinates event processing, detection logic, and system r
 
 Response actions are implemented as independent components, allowing the system to be easily extended with additional mitigation strategies (Alqahtani, Alenezi and Mustafa, 2024).
 ________________
-5. Conclusion
 
 This capstone project provides a modular, extensible, and academically grounded Intrusion Detection System that addresses the shortcomings of traditional signature-based IDS solutions. By integrating rule-based logic with machine-learning anomaly detection, the system is capable of identifying both known and previously unseen authentication threats.
 
